@@ -8,12 +8,14 @@ Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/1.0/%{name}-%{version}.tar.bz2
 # Source0-md5:	d77a9dcab8ddc5e3511ca35c6ba94bc1
 BuildRequires:	GConf2-devel
-BuildRequires:	autoconf
+BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake
 BuildRequires:	evolution-data-server-devel >= 0.0.94
+BuildRequires:	gtk+2-devel >= 2:2.4.0
 BuildRequires:	libgnomeui-devel >= 2.0.0
 BuildRequires:	libsoup-devel >= 2.1.11
 Requires(post):	GConf2
+Requires:		gtk+2 >= 2:2.4.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
