@@ -1,0 +1,29 @@
+diff -urN aa/evolution-webcal-1.0.2/evolution-webcal.applications.in evolution-webcal-1.0.2/evolution-webcal.applications.in
+--- aa/evolution-webcal-1.0.2/evolution-webcal.applications.in	2004-02-07 23:20:59.000000000 +0100
++++ evolution-webcal-1.0.2/evolution-webcal.applications.in	2004-03-18 16:03:42.583818960 +0100
+@@ -1,5 +1,5 @@
+ evolution-icalshare
+-	command=@libexecdir@/evolution-icalshare
++	command=@libexecdir@/evolution-webcal
+ 	name=Evolution iCalendar Subscription Interface
+ 	can_open_multiple_files=true
+ 	expects_uris=true
+diff -urN aa/evolution-webcal-1.0.2/Makefile.am evolution-webcal-1.0.2/Makefile.am
+--- aa/evolution-webcal-1.0.2/Makefile.am	2004-03-09 06:38:23.000000000 +0100
++++ evolution-webcal-1.0.2/Makefile.am	2004-03-18 16:22:04.522298848 +0100
+@@ -7,13 +7,13 @@
+ applications_in_files = evolution-webcal.applications.in
+ applications_DATA = $(applications_in_files:.applications.in=.applications)
+ %.applications: %.applications.in
+-	sed -e "s#\@libexecdir\@#$(exec_prefix)/libexec#g" $< > $@
++	sed -e "s#\@libexecdir\@#$(exec_prefix)/lib#g" $< > $@
+ 
+ schemasdir = $(GCONF_SCHEMA_FILE_DIR)
+ schemas_in_files = evolution-webcal.schemas.in.in
+ schemas_DATA = $(schemas_in_files:.schemas.in.in=.schemas)
+ %.schemas.in: %.schemas.in.in
+-	sed -e "s#\@libexecdir\@#$(exec_prefix)/libexec#g" $< > $@
++	sed -e "s#\@libexecdir\@#$(exec_prefix)/lib#g" $< > $@
+ 
+ @INTLTOOL_SCHEMAS_RULE@
+ 
