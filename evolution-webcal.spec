@@ -1,17 +1,16 @@
 Summary:	Web calendar subscription utility for Evolution
 Summary(pl):	Narzêdzie do subskrypcji sieciowego kalendarza dla Evolution
 Name:		evolution-webcal
-Version:	1.0.10
-Release:	2
+Version:	2.0.0
+Release:	1
 License:	GPL
 Group:		X11/Applications
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/1.0/%{name}-%{version}.tar.bz2
-# Source0-md5:	20c3a03a4cf2a442fe8c97f0af88aac3
-Patch0:		%{name}-locale-names.patch
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/2.0/%{name}-%{version}.tar.bz2
+# Source0-md5:	d1d6394b4c579e09f94d5230686b3b89
 BuildRequires:	GConf2-devel
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake
-BuildRequires:	evolution-data-server-devel >= 0.0.98
+BuildRequires:	evolution-data-server-devel >= 1.0.0
 BuildRequires:	gtk+2-devel >= 2:2.4.4
 BuildRequires:	libgnomeui-devel >= 2.0.0
 BuildRequires:	libsoup-devel >= 2.2.0
@@ -27,9 +26,6 @@ Narzêdzie do subskrypcji sieciowego kalendarza dla Evolution.
 
 %prep
 %setup -q
-%patch0 -p1
-
-rm po/no.po
 
 %build
 %{__aclocal}
@@ -45,6 +41,8 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
 	GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
+
+rm -r $RPM_BUILD_ROOT%{_datadir}/locale/no
 
 %find_lang %{name}
 
