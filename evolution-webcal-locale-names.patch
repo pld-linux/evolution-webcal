@@ -1,0 +1,12 @@
+diff -urN aa/evolution-webcal-1.0.8/configure.ac evolution-webcal-1.0.8/configure.ac
+--- aa/evolution-webcal-1.0.8/configure.ac	2004-08-02 20:07:05.000000000 +0200
++++ evolution-webcal-1.0.8/configure.ac	2004-08-03 17:58:33.433391912 +0200
+@@ -18,7 +18,7 @@
+ 	[translation domain of this package])
+ AC_SUBST(GETTEXT_PACKAGE)
+ 
+-ALL_LINGUAS="ar az ca cs de en_CA en_GB es hu ja nl no pt pt_BR sq sv"
++ALL_LINGUAS="ar az ca cs de en_CA en_GB es hu ja nb nl pt pt_BR sq sv"
+ AM_GLIB_GNU_GETTEXT
+ 
+ # AM_GLIB_GNU_GETTEXT above subst. $DATADIRNAME
