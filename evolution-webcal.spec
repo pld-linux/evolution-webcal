@@ -1,4 +1,5 @@
 Summary:	Web calendar subscription utility for Evolution
+Summary(pl):	Narzêdzie do subskrypcji sieciowego kalendarza dla Evolution
 Name:		evolution-webcal
 Version:	1.0.2
 Release:	1
@@ -18,6 +19,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Web calendar subscription utility for Evolution.
+
+%description -l pl
+Narzêdzie do subskrypcji sieciowego kalendarza dla Evolution.
 
 %prep
 %setup -q
