@@ -11,7 +11,7 @@ Patch0:		%{name}-paths.patch
 BuildRequires:	GConf2-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	evolution-data-server-devel >= 0.0.90
+BuildRequires:	evolution-data-server-devel >= 0.0.91
 BuildRequires:	libgnomeui-devel >= 2.0.0
 BuildRequires:	libsoup-devel >= 2.1.8
 Requires(post):	GConf2
