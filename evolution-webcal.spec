@@ -1,12 +1,12 @@
 Summary:	Web calendar subscription utility for Evolution
 Summary(pl):	Narzêdzie do subskrypcji sieciowego kalendarza dla Evolution
 Name:		evolution-webcal
-Version:	1.0.3
+Version:	1.0.4
 Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/1.0/%{name}-%{version}.tar.bz2
-# Source0-md5:	020efc0242f5282e78eba30f8278156b
+# Source0-md5:	04a6f60304e7c3b187e9b8482a87413f
 Patch0:		%{name}-paths.patch
 BuildRequires:	GConf2-devel
 BuildRequires:	autoconf
