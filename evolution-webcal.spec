@@ -1,25 +1,25 @@
 Summary:	Web calendar subscription utility for Evolution
 Summary(pl):	Narzêdzie do subskrypcji sieciowego kalendarza dla Evolution
 Name:		evolution-webcal
-Version:	2.5.90
+Version:	2.7.1
 Release:	1
 License:	GPL v2
 Group:		X11/Applications
-Source0:	http://ftp.gnome.org/pub/gnome/sources/evolution-webcal/2.5/%{name}-%{version}.tar.bz2
-# Source0-md5:	de482967bbb601c07ba796562dafe34a
+Source0:	http://ftp.gnome.org/pub/gnome/sources/evolution-webcal/2.7/%{name}-%{version}.tar.bz2
+# Source0-md5:	13586dc71cfc86445760277f44383204
 BuildRequires:	GConf2-devel
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake
-BuildRequires:	evolution-data-server-devel >= 1.5.91
-BuildRequires:	gtk+2-devel >= 2:2.8.12
-BuildRequires:	intltool
-BuildRequires:	libgnomeui-devel >= 2.13.3
-BuildRequires:	libsoup-devel >= 2.2.7
+BuildRequires:	evolution-data-server-devel >= 1.7.91
+BuildRequires:	gtk+2-devel >= 2:2.10.1
+BuildRequires:	intltool >= 0.35.0
+BuildRequires:	libgnomeui-devel >= 2.15.91
+BuildRequires:	libsoup-devel >= 2.2.96
 BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.197
 Requires(post,preun):	GConf2
-Requires:	evolution >= 2.5.91
-Requires:	gtk+2 >= 2:2.8.12
+Requires:	evolution >= 2.7.91
+Requires:	gtk+2 >= 2:2.10.1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -46,7 +46,7 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT \
 	GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
 
-rm -r $RPM_BUILD_ROOT%{_datadir}/locale/no
+rm -r $RPM_BUILD_ROOT%{_datadir}/locale/ug
 
 %find_lang %{name}
 
