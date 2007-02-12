@@ -1,5 +1,5 @@
 Summary:	Web calendar subscription utility for Evolution
-Summary(pl.UTF-8):   Narzędzie do subskrypcji sieciowego kalendarza dla Evolution
+Summary(pl.UTF-8):	Narzędzie do subskrypcji sieciowego kalendarza dla Evolution
 Name:		evolution-webcal
 Version:	2.8.0
 Release:	1
