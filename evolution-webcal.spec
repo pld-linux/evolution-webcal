@@ -8,8 +8,6 @@ Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/gnome/sources/evolution-webcal/2.10/%{name}-%{version}.tar.bz2
 # Source0-md5:	a29004e6e1ad977845ed7c68963c8925
 BuildRequires:	GConf2-devel >= 2.18.0.1
-BuildRequires:	autoconf >= 2.53
-BuildRequires:	automake
 BuildRequires:	evolution-data-server-devel >= 1.10.0
 BuildRequires:	gtk+2-devel >= 2:2.10.10
 BuildRequires:	intltool >= 0.35.5
