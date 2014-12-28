@@ -11,7 +11,7 @@ BuildRequires:	GConf2-devel >= 2.26.0
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake
 BuildRequires:	evolution-data-server-devel >= 2.26.0
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	gtk+2-devel >= 2:2.18.0
 BuildRequires:	intltool >= 0.40.0
 BuildRequires:	libsoup-devel >= 2.4.0
